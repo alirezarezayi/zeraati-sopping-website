@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ثبت سفارش | تراشکاری زراعتی</title>
+
+    <link rel="stylesheet" href="/navbar-footer.css">
+    <link rel="stylesheet" href="/checkout.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="icon" href="/images/zaraati-emblem.svg">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <section class="navbar">
+
+        <a href="/index.html">
+            <h2 class="nav-img">
+                <img src="images/zaraati-emblem.svg" alt="">
+                تراشکاری زراعتی
+            </h2>
+        </a>
+
+        <nav class="nav-items">
+
+            <a class="nav-item" href="/products.html">
+                <img class="icon" src="/images/shopping_cart.png" alt="">
+                محصولات
+            </a>
+
+            <a class="nav-item" href="/index.html#contact">
+                <img class="icon" src="/images/call.png" alt="">
+                تماس با ما
+            </a>
+
+            <a class="nav-item cart-nav-link" href="/cart.html">
+
+                <span class="cart-icon-wrapper">
+                    <img class="icon" src="/images/shopping_basket.png" alt="">
+                    <span class="cart-badge">0</span>
+                </span>
+
+                سبد خرید
+
+            </a>
+
+            <a class="nav-item" href="/index.html#about-us">
+                <img class="icon"
+                    src="/images/data_loss_prevention_26dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="">
+                درباره ما
+            </a>
+
+        </nav>
+
+        <button class="menu-toggle" aria-label="منوی سایت">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </section>
+
+
+    <!-- Checkout -->
+
+    <main>
+
+        <section class="checkout-section">
+
+            <h1>ثبت سفارش</h1>
+
+            <div class="checkout-container">
+
+
+                <!-- Customer Information -->
+
+                <section class="customer-info">
+
+                    <h2>اطلاعات مشتری</h2>
+
+                    <form id="checkout-form">
+
+                        <div class="form-group">
+
+                            <label for="full-name">
+                                نام و نام خانوادگی
+                            </label>
+
+                            <input
+                                type="text"
+                                id="full-name"
+                                name="full-name"
+                                placeholder="نام و نام خانوادگی"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                شماره تماس
+                            </label>
+
+<input
+    type="tel"
+    id="phone"
+    name="phone"
+    placeholder="مثلاً 09123456789"
+    inputmode="numeric"
+    maxlength="11"
+>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="province">
+                                    استان
+                                </label>
+
+<select id="province" name="province">
+    <option value="" disabled selected>استان را انتخاب کنید</option>
+
+    <option value="آذربایجان شرقی">آذربایجان شرقی</option>
+    <option value="آذربایجان غربی">آذربایجان غربی</option>
+    <option value="اردبیل">اردبیل</option>
+    <option value="اصفهان">اصفهان</option>
+    <option value="البرز">البرز</option>
+    <option value="ایلام">ایلام</option>
+    <option value="بوشهر">بوشهر</option>
+    <option value="تهران">تهران</option>
+    <option value="چهارمحال و بختیاری">چهارمحال و بختیاری</option>
+    <option value="خراسان جنوبی">خراسان جنوبی</option>
+    <option value="خراسان رضوی">خراسان رضوی</option>
+    <option value="خراسان شمالی">خراسان شمالی</option>
+    <option value="خوزستان">خوزستان</option>
+    <option value="زنجان">زنجان</option>
+    <option value="سمنان">سمنان</option>
+    <option value="سیستان و بلوچستان">سیستان و بلوچستان</option>
+    <option value="فارس">فارس</option>
+    <option value="قزوین">قزوین</option>
+    <option value="قم">قم</option>
+    <option value="کردستان">کردستان</option>
+    <option value="کرمان">کرمان</option>
+    <option value="کرمانشاه">کرمانشاه</option>
+    <option value="کهگیلویه و بویراحمد">کهگیلویه و بویراحمد</option>
+    <option value="گلستان">گلستان</option>
+    <option value="گیلان">گیلان</option>
+    <option value="لرستان">لرستان</option>
+    <option value="مازندران">مازندران</option>
+    <option value="مرکزی">مرکزی</option>
+    <option value="هرمزگان">هرمزگان</option>
+    <option value="همدان">همدان</option>
+    <option value="یزد">یزد</option>
+</select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="city">
+                                    شهر
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    placeholder="شهر"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="postal-code">
+                                کد پستی
+                            </label>
+
+
+                        <input
+                        type="text"
+                        id="postal-code"
+                        name="postal-code"
+                        placeholder="کد پستی ۱۰ رقمی"
+                        inputmode="numeric"
+                        maxlength="10"
+                        >   
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="address">
+                                آدرس کامل
+                            </label>
+
+                            <textarea
+                                id="address"
+                                name="address"
+                                rows="4"
+                                placeholder="آدرس کامل محل دریافت سفارش"
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="order-note">
+                                توضیحات سفارش
+                                <span>(اختیاری)</span>
+                            </label>
+
+                            <textarea
+                                id="order-note"
+                                name="order-note"
+                                rows="3"
+                                placeholder="اگر توضیح خاصی درباره سفارش دارید..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="submit-order"
+                        >
+                        ادامه خرید
+                        </button>
+
+                    </form>
+
+                </section>
+
+
+                <!-- Order Summary -->
+
+                <aside class="checkout-summary">
+
+                    <h2>خلاصه سفارش</h2>
+
+                    <div class="checkout-items">
+                        <!-- محصولات با JavaScript اینجا قرار می‌گیرند -->
+                    </div>
+
+
+                    <div class="checkout-total">
+
+                        <span>مجموع سفارش:</span>
+
+                        <strong>
+                            <span class="checkout-total-price">۰</span>
+                            تومان
+                        </strong>
+
+                    </div>
+
+                </aside>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <div class="footer-links">
+
+                <h3>دسترسی سریع</h3>
+
+                <a href="/index.html">صفحه اصلی</a>
+                <a href="/products.html">محصولات</a>
+                <a href="/index.html#about-us">درباره ما</a>
+                <a href="/index.html#contact">تماس با ما</a>
+
+            </div>
+
+
+            <div class="footer-contact" id="contact">
+
+                <h3>ارتباط با ما</h3>
+
+                <p>
+                    <img src="/images/call_white.svg" class="icon" alt="">
+                    شماره تماس : 6789 345 0912
+                </p>
+
+                <p>
+                    <img src="/images/location_white.svg" class="icon" alt="">
+                    آدرس مجموعه : فارس، اقلید، خیابان امام حسن، نرسیده به پارک لاله
+                </p>
+
+                <p>
+                    <img src="/images/forum.svg" class="icon" alt="">
+                    هفت روز هفته به جز روزهای تعطیل، از ساعت 9 صبح تا ساعت 14 پاسخگوی شما هستیم.
+                </p>
+
+            </div>
+
+
+            <div class="Contact-Information">
+
+                <h3>شبکه های اجتماعی:</h3>
+
+                <div class="Contact-Information-a">
+
+                    <a href="">
+                        <img src="/Social.Network.Icons/social-media-icons/svg/instagram.svg" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="/Social.Network.Icons/social-media-icons/svg/whatsapp.svg" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="/Social.Network.Icons/social-media-icons/svg/telegram.svg" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="/Social.Network.Icons/Eitaa/Eitaa.png" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="/Social.Network.Icons/logo-rubika.png" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="/Social.Network.Icons/bale.png" alt="">
+                    </a>
+
+                </div>
+
+                <h3>نمادهای اعتماد:</h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 تمامی حقوق این وب‌سایت محفوظ است.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

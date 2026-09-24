@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فروشگاه | تراشکاری زراعتی</title>
+    <title>سبد خرید | تراشکاری زراعتی</title>
     <link rel="stylesheet" href="/navbar-footer.css">
-    <link rel="stylesheet" href="/products.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/cart.css">
+    <link rel="stylesheet" href="/normalize.css">
     <link rel="icon" href="/images/zaraati-emblem.svg">
 </head>
 <body>
-        <!-- navbar  -->
+    
+    <!-- navbar  -->
 
         <section class="navbar">
-             <a href="/index.html"> <h2 class="nav-img"><img src="images/zaraati-emblem.svg" alt="">تراشکاری زراعتی </h2></a>
+           <a href="/index.html"> <h2 class="nav-img"><img src="images/zaraati-emblem.svg" alt="">تراشکاری زراعتی </h2> </a>
 <nav class="nav-items">
 
     <a class="nav-item" href="/products.html">
@@ -46,78 +47,74 @@
     <span></span>
 </button>
         </section>
- 
-    <header class="products-header">
 
-        <div class="products-header-text">
+<main>
 
-            <h1>محصولات </h1>
+    <section class="cart-section">
+
+        <h1>سبد خرید</h1>
+
+        <div class="cart-container">
+
+            <!-- Cart Products -->
+
+            <div class="cart-items">
+                <!-- محصولات با JavaScript اینجا قرار می‌گیرند -->
+            </div>
+
+
+            <!-- Cart Summary -->
+
+            <aside class="cart-summary">
+
+                <h2>خلاصه سفارش</h2>
+
+                <div class="cart-total">
+
+                    <span>مجموع:</span>
+
+                    <strong>
+                        <span class="total-price">0</span>
+                        تومان
+                    </strong>
+
+                </div>
+
+                <a href="/checkout.html" class="checkout-button">
+                 ثبت سفارش 
+                </a>
+
+                <a class="continue-shopping" href="#">
+                    ادامه خرید
+                </a>
+
+            </aside>
+
+        </div>
+
+
+        <!-- Empty Cart -->
+
+        <div class="empty-cart">
+
+            <h2>سبد خرید شما خالی است</h2>
 
             <p>
-            کیفیت را از ما بخواهید
+                هنوز محصولی به سبد خرید اضافه نکرده‌اید.
             </p>
 
-        </div>
-
-        <div class="products-header-img">
-
-            <img src="images/baner-4.png" alt="">
+            <a href="/products.html">
+                مشاهده محصولات
+            </a>
 
         </div>
 
-</header>
-<main>
-<section class="products-section">
-    <h1>محصولات</h1>
-
-    <div class="products-container">
-
-        <article class="product-card">
-            <img src="images/product1.jpg" alt="سیلندر موتور سیکلت">
-
-            <div class="product-info">
-                <h2>سیلندر هوندا ۱۲۵</h2>
-                <p>سیلندر تراشکاری شده موتور سیکلت</p>
-
-                <a href="/product-1.html" class="product-link">
-                    مشاهده محصول
-                </a>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <img src="images/product2.jpg" alt="سیلندر موتور سیکلت">
-
-            <div class="product-info">
-                <h2>سیلندر هوندا ۱۵۰</h2>
-                <p>سیلندر تراشکاری شده موتور سیکلت</p>
-
-                <a href="product2.html" class="product-link">
-                    مشاهده محصول
-                </a>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <img src="images/product3.jpg" alt="سیلندر موتور سیکلت">
-
-            <div class="product-info">
-                <h2>سیلندر CG</h2>
-                <p>سیلندر تراشکاری شده موتور سیکلت</p>
-
-                <a href="product3.html" class="product-link">
-                    مشاهده محصول
-                </a>
-            </div>
-        </article>
-
-
-    </div>
-</section>
+    </section>
 
 </main>
     <footer>
     <div class="footer-container">
+
         <!--  footer links -->
 
         <div class="footer-links">
@@ -149,7 +146,7 @@
         <h3>نمادهای اعتماد:</h3>
         </div>
         
-
+        
     </div>
 
     <div class="footer-bottom">
@@ -157,6 +154,6 @@
     </div>
 
 </footer>
-<script src="/index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
